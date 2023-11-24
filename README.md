@@ -1,2 +1,2 @@
-# homework
-My homework.
+# Homework
+My homework for my CS courses.
