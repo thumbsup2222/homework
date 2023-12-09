@@ -1,0 +1,107 @@
+/* GLOBAL STYLE */
+*{
+    // Box model
+    padding: 0;
+    margin: 0;
+    // Font
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+}
+/* STYLE */
+body{
+    padding: 70px;
+    background: #101010;
+    h1{
+        display: block;
+        text-align: center;
+        margin-bottom: 50px;
+        font-size: 3rem;
+        // Text color
+        -webkit-background-clip: text !important; // Text's background
+        background-clip: text; // If webkit not supported it will not work
+        color: transparent; // Removes frontground
+        background: linear-gradient(rgb(9, 24, 192), rgb(183, 19, 183)); // Sets color
+        /*
+            In reality there is no frontground and what
+            user sees is text's background which costumized
+            with linear-gradient. Linear-gradient works only in backgrounds.
+        */
+    }
+    .container{
+        // Set container to center
+        margin: auto;
+        display: flex;
+        width: fit-content;
+        // Box model
+        padding: 14px;
+        border-radius: 10px;
+        //Background
+        background: rgba(255,255,255,.1);
+        // Shadow
+        box-shadow: 0px 0px 50px 25px purple;
+        img{
+            // Size
+            width: 500px;
+            height: 500px;
+            // Border
+            border: 2.5px purple solid;
+            border-radius: 10px;
+            // Margin
+            margin-bottom: 14px;
+        }
+        button{
+            outline: none;
+            // Border
+            border: 2px solid white;
+            border-radius: 10px;
+            // Box model
+            padding: 7px 17px 7px 17px;
+            // Color
+            color: black;
+            background: purple;
+            // Shadow
+        }
+        div:nth-child(1){
+            margin-right: 15px;
+            section{
+                display: flex;
+                gap: 30px;
+                p{
+                    font-size: 2rem;
+                    color: rgb(212, 23, 212);
+                }
+            }
+        }
+        div:nth-child(2){
+            p{
+                line-height: 1.8rem;
+            }
+            .more{
+                margin-top: 10px;
+                background: rgba(255,255,255,.1);
+                border-radius: 10px;
+                padding: 14px;
+                width: fit-content;
+                div{
+                    display: flex;
+                    gap: 20px;
+                    .see-more-text{
+                        font-size: 4rem;
+                    }
+                    section{
+                        display: flex;
+                        flex-direction: column;
+                        .product-name{
+                            margin: 0;
+                        }
+                        img{
+                            width: 210px;
+                            height: 260px; 
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

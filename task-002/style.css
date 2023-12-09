@@ -1,0 +1,92 @@
+/* GLOBAL STYLE */
+* {
+  padding: 0;
+  margin: 0;
+  font-size: 16px;
+  font-family: "Poppins", sans-serif;
+  color: white;
+}
+
+/* STYLE */
+body {
+  padding: 70px;
+  background: #101010;
+}
+body h1 {
+  display: block;
+  text-align: center;
+  margin-bottom: 50px;
+  font-size: 3rem;
+  -webkit-background-clip: text !important;
+  background-clip: text;
+  color: transparent;
+  background: linear-gradient(rgb(9, 24, 192), rgb(183, 19, 183));
+  /*
+      In reality there is no frontground and what
+      user sees is text's background which costumized
+      with linear-gradient. Linear-gradient works only in backgrounds.
+  */
+}
+body .container {
+  margin: auto;
+  display: flex;
+  width: fit-content;
+  padding: 14px;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow: 0px 0px 50px 25px purple;
+}
+body .container img {
+  width: 500px;
+  height: 500px;
+  border: 2.5px purple solid;
+  border-radius: 10px;
+  margin-bottom: 14px;
+}
+body .container button {
+  outline: none;
+  border: 2px solid white;
+  border-radius: 10px;
+  padding: 7px 17px 7px 17px;
+  color: black;
+  background: purple;
+}
+body .container div:nth-child(1) {
+  margin-right: 15px;
+}
+body .container div:nth-child(1) section {
+  display: flex;
+  gap: 30px;
+}
+body .container div:nth-child(1) section p {
+  font-size: 2rem;
+  color: rgb(212, 23, 212);
+}
+body .container div:nth-child(2) p {
+  line-height: 1.8rem;
+}
+body .container div:nth-child(2) .more {
+  margin-top: 10px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  padding: 14px;
+  width: fit-content;
+}
+body .container div:nth-child(2) .more div {
+  display: flex;
+  gap: 20px;
+}
+body .container div:nth-child(2) .more div .see-more-text {
+  font-size: 4rem;
+}
+body .container div:nth-child(2) .more div section {
+  display: flex;
+  flex-direction: column;
+}
+body .container div:nth-child(2) .more div section .product-name {
+  margin: 0;
+}
+body .container div:nth-child(2) .more div section img {
+  width: 210px;
+  height: 260px;
+}/*# sourceMappingURL=style.css.map */
