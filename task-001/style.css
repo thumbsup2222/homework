@@ -1,39 +1,29 @@
-/* Global */
+/* GLOBAL STYLE */
 * {
-  /* Font */
+  margin: 0px;
   font-family: sans-serif;
   font-size: 16px;
-  /* No margin */
-  margin: 0px;
 }
 
-/* Content */
+/* STYLE */
 body {
   padding: 10px;
   background: whitesmoke;
-  background-repeat: no-repeat;
 }
 
-.container .article {
-  /* Title */
-  /* Article */
-}
 .container .article h1 {
+  font-weight: 900;
   font-size: 2rem;
   text-align: center;
-  font-weight: 900;
   color: rgb(5, 43, 71);
   margin: 1rem;
 }
 .container .article div {
-  width: fit-content;
-  padding: 1rem;
-  border-radius: 5px;
   margin: auto;
+  padding: 1rem;
   border: rgb(5, 43, 71) 1px solid;
-  /* Article title */
-  /* Paragraph */
-  /* Image */
+  border-radius: 5px;
+  width: fit-content;
 }
 .container .article div h2 {
   font-weight: 800;

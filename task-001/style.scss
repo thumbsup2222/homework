@@ -1,48 +1,56 @@
-/* Global */
+/* GLOBAL STYLE */
 *{
-    /* Font */
+    // Box model
+    margin: 0px;
+    // Font
     font-family: sans-serif;
     font-size: 16px;
-    /* No margin */
-    margin: 0px;
 }
-/* Content */
+
+/* STYLE */
 body{
     padding: 10px;
     background: whitesmoke;
-    background-repeat: no-repeat;
 }
 .container{
     .article{
-        /* Title */
+        // Title
         h1{
-            font-size: 2rem;
-            text-align: center;
+            // Font size
             font-weight: 900;
+            font-size: 2rem;
+            // Set it to center
+            text-align: center;
+            // Color
             color: rgb(5, 43, 71);
+            // Distance
             margin: 1rem;
         }
-        /* Article */
+        // Articles
         div{
-            width: fit-content;
-            padding: 1rem;
-            border-radius: 5px;
+            // Box model
             margin: auto;
+            padding: 1rem;
+            // Radius
             border: rgb(5, 43, 71) 1px solid;
-            /* Article title */
+            border-radius: 5px;
+            // Width
+            width: fit-content;          
+            // Article title
             h2{
                 font-weight: 800;
                 font-size: 1.7rem;
                 margin-bottom: 1rem;
             }
-            /* Paragraph */
+            // Paragraph
             p{
                 margin-bottom: 1rem;
                 width: 700px;
+                // Text style               
                 line-height: 1.5rem;
                 font-weight: 700; 
             }
-            /* Image */
+            // Image
             img{
                 height: 300px;
                 aspect-ratio: 4 / 3;

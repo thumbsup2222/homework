@@ -13,7 +13,6 @@ body{
     padding: 70px;
     background: #101010;
     h1{
-        display: block;
         text-align: center;
         margin-bottom: 50px;
         font-size: 3rem;
@@ -62,6 +61,7 @@ body{
             background: purple;
             // Shadow
         }
+        // Main product
         div:nth-child(1){
             margin-right: 15px;
             section{
@@ -73,10 +73,12 @@ body{
                 }
             }
         }
+        // Text
         div:nth-child(2){
             p{
                 line-height: 1.8rem;
             }
+            // 'See more' section
             .more{
                 margin-top: 10px;
                 background: rgba(255,255,255,.1);
@@ -89,6 +91,7 @@ body{
                     .see-more-text{
                         font-size: 4rem;
                     }
+                    // Sections
                     section{
                         display: flex;
                         flex-direction: column;
