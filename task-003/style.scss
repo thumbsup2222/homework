@@ -1,0 +1,53 @@
+/* GLOBAL STYLE */
+*{
+    // Box model
+    padding: 0;
+    margin: 0;
+    // Font
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    .hero{
+        height: 100vh;
+        header{
+            height: 4%;
+            // Box model
+            padding: 20px;
+            // Center elements
+            display: flex;
+            justify-content: center;
+            // Background
+            background: #ededed;
+            ul{
+                display: flex;
+                align-items: center;
+                gap: 16px;
+                // Remove dots
+                list-style-type: none;
+                li > button{
+                    padding: 7px 21px;
+                    background: rgb(58, 129, 242);
+                    border: none;
+                    border-radius: 5px;
+                }
+            }
+        }
+        main{
+            height: 91%;
+            // Set elements to center
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            // Background
+            color: white;
+            background: url(./assets/bg.jpg);
+            background-size: cover;
+            // Texts
+            text-shadow: 3px 3px 10px darkgrey;
+            h1 {font-size: 4rem;}
+            p {font-size: 3rem;}
+        }
+    }
+}
