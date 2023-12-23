@@ -1,0 +1,173 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  overflow: auto;
+}
+body::-webkit-scrollbar {
+  width: 0;
+}
+body .border-img {
+  vertical-align: top;
+  width: 100vw;
+}
+body nav {
+  z-index: 2;
+  position: sticky;
+  top: 0;
+  background: white;
+  box-sizing: border-box;
+  width: 100vw;
+  height: fit-content;
+  padding: 15px;
+  border-bottom: 4px #0d6ac1 solid;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+body nav img {
+  width: 350px;
+}
+body nav ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  list-style: none;
+  gap: 31px;
+  font-size: 2rem;
+  color: #0d6ac1;
+  cursor: pointer;
+}
+body nav ul button {
+  font-size: 2rem;
+  padding: 0 31px;
+  border: none;
+  border-radius: 7px;
+  background: #064580;
+  color: white;
+  cursor: pointer;
+}
+body main {
+  width: 100vw;
+}
+body main header {
+  background: url(./assets/bg.png);
+  background-size: cover;
+  width: 100vw;
+  height: fit-content;
+}
+body main header section {
+  height: 700px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+}
+body main header h1, body main header p {
+  text-align: center;
+  color: white;
+}
+body main header h1 {
+  font-size: 3.2rem;
+}
+body main header p {
+  font-size: 2rem;
+}
+body main main .why-us {
+  background: #871400;
+  width: 100%;
+}
+body main main .why-us .main-text {
+  text-align: center;
+  font-size: 5rem;
+  color: white;
+}
+body main main .why-us .container {
+  padding-bottom: 7px;
+  display: flex;
+  justify-content: space-around;
+}
+body main main .why-us .container div {
+  padding: 15px;
+  width: 30%;
+  background: white;
+  border-radius: 7px;
+  box-shadow: 5px -5px 15px black;
+}
+body main main .why-us .container div img {
+  max-width: 90%;
+}
+body main main .courses {
+  background: #591f7c;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+}
+body main main .courses section {
+  padding: 15px;
+  margin-bottom: 31px;
+  border-radius: 7px;
+  width: 35%;
+  background: white;
+}
+body main main .courses .course-img {
+  border-radius: 7px;
+  width: 100%;
+  aspect-ratio: 39/22;
+}
+body main main .courses button {
+  font-size: 2rem;
+  padding: 0 31px;
+  border: none;
+  border-radius: 7px;
+  background: #064580;
+  color: white;
+  cursor: pointer;
+}
+body main footer {
+  background: #140028;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+body main footer p {
+  margin: 7px 200px;
+}
+body main footer div {
+  display: flex;
+  justify-content: space-evenly;
+}
+body main footer div section {
+  margin-bottom: 15px;
+  padding: 15px;
+  border-radius: 7px;
+  background: white;
+  color: black;
+  width: 300px;
+}
+body footer {
+  background: #0066FF;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  gap: 15px;
+}
+body footer .footer-logo {
+  width: 700px;
+  border-radius: 7px;
+  align-self: center;
+}
+body footer ul {
+  display: flex;
+  align-self: center;
+  list-style: none;
+  gap: 15px;
+  color: white;
+}
+body footer p {
+  text-align: center;
+}/*# sourceMappingURL=style.css.map */

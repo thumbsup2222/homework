@@ -1,0 +1,226 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    // Remove scrollbar
+    overflow: auto;
+    &::-webkit-scrollbar{
+        width: 0;
+    }
+    // Curved borders
+    .border-img{
+        vertical-align: top;
+        width: 100vw;
+    }
+    // Navbar
+    nav{
+        $color: #0d6ac1;
+        // Always visible
+        z-index: 2;
+        position: sticky;
+        top: 0;
+        // Background
+        background: white;
+        // Size
+        box-sizing: border-box;
+        width: 100vw;
+        height: fit-content;
+        // Padding
+        padding: 15px;
+        // Border
+        border-bottom: 4px $color solid;
+        // Align contents
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        // Image
+        img{ width: 350px; }
+        // Menu
+        ul{
+            // Align contents
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            // Remove dots
+            list-style: none;
+            // Distance between elements
+            gap: 31px;
+            // Text
+            font-size: 2rem;
+            color: $color;
+            cursor: pointer;
+            // Login btn
+            button{
+                font-size: 2rem;
+                padding: 0 31px;
+                // Border
+                border: none;
+                border-radius: 7px;
+                // Colors
+                background: #064580;
+                color: white;
+                cursor: pointer;
+            }
+        }
+    }
+    // Main part
+    main{
+        width: 100vw;
+        // Introduction screen
+        header{
+            // BG image
+            background: url(./assets/bg.png);
+            background-size: cover;
+            // Size
+            width: 100vw;
+            height: fit-content;
+            // Text
+            section{
+                height: 700px;
+                display: flex;
+                // Align text to center
+                flex-direction: column;
+                justify-content: center;
+                align-content: center;
+            }
+            // Text customization
+            h1, p{
+                text-align: center;
+                color: white;
+            }
+            h1{ font-size: 3.2rem; }
+            p{ font-size: 2rem; }
+        }
+        // Main body part
+        main{
+            // 'Why Us?' section
+            .why-us{
+                background: #871400;
+                width: 100%;
+                // 'Why Us' text
+                .main-text{
+                    text-align: center;
+                    font-size: 5rem;
+                    color: white;
+                }
+                .container{
+                    padding-bottom: 7px;
+                    // Align content
+                    display: flex;
+                    justify-content: space-around;
+                    div{
+                        // Box model
+                        padding: 15px;
+                        // Size
+                        width: 30%;
+                        background: white;  
+                        // Rounded corners
+                        border-radius: 7px;
+                        // Shadow
+                        box-shadow: 5px -5px 15px black;
+                        // Image
+                        img{
+                            max-width: 90%;
+                        }  
+                    }
+                }         
+            }
+            // 'Courses' section
+            .courses{
+                background: #591f7c;
+                // Align content
+                display: flex;
+                flex-flow: row wrap;
+                justify-content: space-evenly;
+                section{
+                    // Box model
+                    padding: 15px;
+                    margin-bottom: 31px;
+                    // Rounded corners
+                    border-radius: 7px;
+                    width: 35%;
+                    background: white;
+                }
+                // Images
+                .course-img{
+                    // Rounded corners
+                    border-radius: 7px;
+                    // Size
+                    width: 100%;
+                    aspect-ratio: 39 / 22;
+                }
+                // Buttons
+                button{
+                    font-size: 2rem;
+                    padding: 0 31px;
+                    // Border
+                    border: none;
+                    border-radius: 7px;
+                    // Colors
+                    background: #064580;
+                    color: white;
+                    cursor: pointer;
+                }
+            }
+        }
+        // 'Contact Us' section
+        footer{
+            // Background
+            background: #140028;
+            // Color
+            color: white;
+            // Align content
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            p{ margin: 7px 200px; }
+            div{
+                // Align content
+                display: flex;
+                justify-content: space-evenly;
+                section{
+                    // Box model
+                    margin-bottom: 15px;
+                    padding: 15px;
+                    border-radius: 7px;
+                    // Background
+                    background: white;
+                    // Color
+                    color: black;
+                    // Size
+                    width: 300px;
+                }
+            }
+        }  
+    }
+    // Footer
+    footer{
+        background: #0066FF;
+        // Align content
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        gap: 15px;
+        // Image
+        .footer-logo{
+            width: 700px;
+            border-radius: 7px;
+            align-self: center;
+        }
+        // 'ul' containers
+        ul{
+            // Align
+            display: flex;
+            align-self: center;
+            // Remove dots
+            list-style: none;
+            gap: 15px;
+            // Color
+            color: white;
+        }
+        // Final text
+        p{ text-align: center; }
+    }
+}
