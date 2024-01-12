@@ -1,0 +1,37 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+// Global classes
+.rounded{
+    border-radius: 7px;
+}
+// Body
+body{
+    background: url(../../assets/bg.svg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+// Content
+.root{
+    height: 100vh;
+    & > *{ position: absolute; }
+    .paywall{
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .template1{
+        bottom: 0;
+    }
+    .template2{
+        right: 0;
+        top: 5vh;
+    }
+    .template3{
+        z-index: -2;
+        left: 100px;
+    }
+}

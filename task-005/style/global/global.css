@@ -1,0 +1,39 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+}
+
+.rounded {
+  border-radius: 7px;
+}
+
+body {
+  background: url(../../assets/bg.svg);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.root {
+  height: 100vh;
+}
+.root > * {
+  position: absolute;
+}
+.root .paywall {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.root .template1 {
+  bottom: 0;
+}
+.root .template2 {
+  right: 0;
+  top: 5vh;
+}
+.root .template3 {
+  z-index: -2;
+  left: 100px;
+}/*# sourceMappingURL=global.css.map */

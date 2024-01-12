@@ -1,0 +1,53 @@
+@charset "UTF-8";
+.root .template1 {
+  width: 60vw;
+  background: white;
+}
+.root .template1 .hero nav {
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.root .template1 .hero nav .logo-wrapper .brand {
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+.root .template1 .hero nav .logo-wrapper .brand .blue {
+  color: #155298;
+}
+.root .template1 .hero nav .logo-wrapper .brand .grey {
+  color: #5f5f5f;
+}
+.root .template1 .hero nav .menu-wrapper .menu {
+  display: flex;
+  gap: 15px;
+  list-style: none;
+  font-weight: 600;
+}
+.root .template1 .hero nav .menu-wrapper .menu li {
+  cursor: pointer;
+}
+.root .template1 .hero nav .menu-wrapper .menu .🆙-menu-item {
+  color: #2165b3;
+}
+.root .template1 .hero nav .btn-wrapper .btn {
+  background: linear-gradient(to right, #6600FF, #00CC99);
+  padding: 10px 45px;
+  border: none;
+  font-size: 1.5rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+.root .template1 .hero main {
+  background: #ffda53;
+  display: flex;
+}
+.root .template1 .hero main p {
+  font-size: 4rem;
+}
+.root .template1 .hero main img {
+  width: 324px;
+  height: 324px;
+  border-radius: 100%;
+}/*# sourceMappingURL=style+1.css.map */

@@ -1,0 +1,52 @@
+.root .paywall {
+  gap: 7px;
+  padding: 7px;
+  border: 5px solid whitesmoke;
+  opacity: 0.85;
+  background: rgba(0, 0, 0, 0.8156862745);
+  color: white;
+  width: fit-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.root .paywall ul {
+  list-style: none;
+  margin-top: 7px;
+}
+.root .paywall .icon-wrapper {
+  background: white;
+  display: flex;
+  gap: 15px;
+  padding: 7px;
+  width: fit-content;
+}
+.root .paywall .icon-wrapper .icon {
+  display: inline-block;
+  width: 60px;
+  aspect-ratio: 1/1;
+}
+.root .paywall button {
+  background: linear-gradient(to right, #6600FF, #00CC99);
+  padding: 15px 63px;
+  border: none;
+  font-size: 1.5rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+.root .paywall button a:link {
+  text-decoration: none;
+  color: black;
+}
+.root .paywall button a:visited {
+  text-decoration: none;
+  color: black;
+}
+.root .paywall button a:hover {
+  text-decoration: none;
+  color: black;
+}
+.root .paywall button a:active {
+  text-decoration: none;
+  color: black;
+}/*# sourceMappingURL=paywall.css.map */

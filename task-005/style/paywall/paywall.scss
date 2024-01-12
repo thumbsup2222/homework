@@ -1,0 +1,49 @@
+.root{
+    .paywall{
+        // Box model
+        gap: 7px;
+        padding: 7px;
+        border: 5px solid whitesmoke;
+        // Color
+        opacity: .85;
+        background: #000000d0;
+        color: white;
+        // Set items to center
+        width: fit-content;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        // List
+        ul{
+            list-style: none;
+            margin-top: 7px;
+        }
+        // Icon wrapper
+        .icon-wrapper{
+            background: white;
+            display: flex;
+            gap: 15px;
+            padding: 7px;
+            width: fit-content;
+            // Icons
+            .icon{
+                display: inline-block;
+                width: 60px;
+                aspect-ratio: 1/1;
+            }
+        }
+        // Button
+        button{
+            background: linear-gradient(to right, #6600FF, #00CC99);
+            padding: 15px 63px;
+            border: none;
+            font-size: 1.5rem;
+            font-weight: 700;
+            cursor: pointer;
+            a:link { text-decoration: none; color: black;}
+            a:visited { text-decoration: none; color: black;}
+            a:hover { text-decoration: none; color: black;}
+            a:active { text-decoration: none; color: black;}
+        }
+    }
+}

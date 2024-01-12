@@ -1,0 +1,45 @@
+.root{
+    .template2{
+        .navbar{
+            background: white;
+            padding: 15px 63px;
+            font-weight: 600;
+            ul{ 
+                width: 560px;
+                display: flex;
+                justify-content: space-evenly;
+                list-style-type: none;
+                li:nth-child(1){ color: rgb(81, 37, 11); }
+            }
+        }
+        .hero{
+            height: 500px;
+            background: url(../../../assets/img/cake.webp);
+            background-position: center center;
+            background-size: cover;
+            color: white;
+            padding: 31px;
+            text-align: center;
+            & > p {margin-top: 48px;}
+            .msg{
+                padding: 15px;
+                background: rgb(164, 116, 52);
+                display: flex;
+                align-items: center;
+                gap: 25px;
+                margin-top: 63px;
+                .text-wrapper{
+                    width: 300px;
+                    p {margin-top: 15px;}
+                }
+                .icon-wrapper{
+                    img{
+                        border-radius: 100%;
+                        width: 250px;
+                        aspect-ratio: 1/1;
+                    }
+                }
+            }
+        }
+    }
+}

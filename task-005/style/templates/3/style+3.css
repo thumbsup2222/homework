@@ -1,0 +1,40 @@
+.root .template3 {
+  height: 46vh;
+  width: 50vw;
+}
+.root .template3 header {
+  height: 4%;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  background: #ededed;
+}
+.root .template3 header ul {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  list-style-type: none;
+}
+.root .template3 header ul li > button {
+  padding: 7px 21px;
+  background: rgb(58, 129, 242);
+  border: none;
+  border-radius: 5px;
+}
+.root .template3 main {
+  height: 91%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  background: url(../../../assets/img/site.jpg);
+  background-size: cover;
+  text-shadow: 3px 3px 10px darkgrey;
+}
+.root .template3 main h1 {
+  font-size: 2.4rem;
+}
+.root .template3 main p {
+  font-size: 1.7rem;
+}/*# sourceMappingURL=style+3.css.map */
