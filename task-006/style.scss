@@ -1,0 +1,220 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    color: white;
+    border: none;
+}
+body{
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+// Variables
+$primary-color: hsl(275, 70%, 25%);
+$primary-light-color: hsl(275, 95%, 65%);
+$primary-dark-color: hsl(280, 30%, 5%);
+$grey-color: hsl(270, 15%, 10%);
+$transparent-color: rgba(0,0,0,.55);
+// Mixins
+@mixin square-size($size){
+    width: $size;
+    height: $size;
+}
+@mixin size($x, $y){
+    width: $x; height: $y;
+}
+// Global classes
+.rounded { border-radius: 7px; }
+.pointer { cursor: pointer; }
+.btn{
+    padding: 10px 32px;
+    background: $grey-color;
+    color: $primary-light-color;
+    border-radius: 7px;
+    cursor: pointer;
+    margin-left: 25px;
+    box-shadow: 0 0 10px 1px $primary-light-color;
+}
+.hover{
+    transition: 400ms;
+    &:hover{ color: $primary-light-color; scale: 1.15;}
+}
+.scale-hover{ scale: 1.15; }
+.input-field{
+    color: $primary-light-color;
+    background: $primary-dark-color;
+    @include size(250px, 40px);
+    outline: none;
+    padding: 0 10px;
+    box-shadow: 0 0 10px 1px $primary-light-color;
+    transition: 400ms;
+    &:hover, &:focus{ scale: 1.1; }
+}
+// Navbar
+.nav{
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 45px;
+    background: linear-gradient(to bottom, $primary-color, $primary-dark-color);
+    .img-wrapper > img {@include square-size(75px)};
+    .menu{
+        list-style-type: none;
+        display: flex;
+        gap: 25px;
+        .main-item { color: $primary-light-color }
+    }
+    .btn-wrapper{.btn{a{color: $primary-light-color}}}
+}
+// Hero content
+.hero-content{
+    text-align: center;
+    padding: 200px 0 0 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background: url(./img/bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100vw;
+    .content{ display: flex; gap: 15px; }
+    .text-wrapper, .section-wrapper {width: 40vw}
+    .section-wrapper{
+        padding: 15px 63px;
+        background: $transparent-color;
+        .btn{margin-top: 20px;}
+    }
+    .lg-color{ background: linear-gradient(transparent, $primary-color);
+               @include size( 100vw, 150px )}
+}
+// Main part
+main{
+    background: linear-gradient($primary-color, $primary-dark-color);
+    padding: 31px 95px;
+    display: grid;
+    row-gap: 50px;
+    // 'What we are doing?' section
+    .what-section{
+        display: flex;
+        justify-content: space-between;
+        gap: 30px;
+        .img-wrapper{ img{
+            @include size(630px, 470px)
+        }}
+        p{ align-self: center; width: fit-content; }
+        margin: 70px 0;
+    }
+    // 'Why Us?' section
+    .why-section{
+        display: flex;
+        justify-content: space-between;
+        .why-us{ width: 50vw; }
+        .stats{
+            align-self: center;
+            padding: 15px;
+            @include size(400px, fit-content);
+            *{ margin-top: 7px; }
+            background: $transparent-color;
+            .bar{
+                @include size(400px, 20px);
+                border-radius: 7px;
+                background: $grey-color;
+                box-shadow: 0 0 10px 1px $primary-light-color;
+                .filled-bar{
+                    background: linear-gradient(to right, orange, $primary-color);
+                    border-top-left-radius: 7px;
+                    border-bottom-left-radius: 7px;
+                    @include size(93%, 100%)
+                }
+            }
+        }
+    }
+    // Education roadmap
+    .education-section{
+        .roadmap{
+            display: flex;
+            .card-wrapper{
+                width: fit-content;
+                display: grid;
+                gap: 30px;
+                .card{
+                    width: 511px;
+                    padding: 15px 31px;
+                    background: $transparent-color;
+                }
+            }
+            .road-wrapper{
+                display: flex;
+                justify-content: center;
+                width: 100%;
+                .road {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    align-content: center;
+                    align-items: center;
+                    background: linear-gradient(hsl(110, 85%, 25%), hsl(50, 80%, 55%), orange, orangered);
+                    width: 10px;
+                    height: 100%;
+                  }          
+                .dot {
+                    @include square-size(30px);
+                    border-radius: 100%;
+                    background: yellow;
+                  }
+            }
+        }
+    }
+    // Teachers
+    .teachers{
+        .bio{
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: repeat(3, 1fr);
+            row-gap: 31px;
+        }
+        .teacher-bio{
+            .face{ @include square-size(200px)}
+            .name{ color: darkgrey; }
+            .profession{ color: rgb(86, 86, 86); }
+        }
+    }
+    // This website is sponsored by NordVPN!
+    .sponsors{
+        width: 100%;
+        .cards{
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+            gap: 45px;
+        }
+        .sponsor-card{
+            padding: 0;
+            .logo { @include size(25vw, 300px)}
+        }
+    }
+}
+// Footer
+.footer{
+    background: $primary-dark-color;
+    padding: 30px;
+    display: flex;
+    justify-content: space-evenly;
+    .footer-column{
+        width: 140px;
+        &:nth-child(4){ 
+            width: 300px;
+            form{ display: flex; margin-top: 15px; }
+        }
+        .column-menu{
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            li{ color: grey; }
+        }}}
