@@ -1,0 +1,11 @@
+*{
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    background-image: url(./img/bg.webp);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center center;
+}
