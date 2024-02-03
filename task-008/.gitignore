@@ -1,0 +1,7 @@
+# Node.JS
+node_modules
+package.json
+package-lock.json
+
+# Tailwind
+tailwind.config.js

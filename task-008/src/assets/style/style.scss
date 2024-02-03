@@ -1,0 +1,81 @@
+// VARIABLES
+$primary-color: #84cc16;
+$dark-primary-color: #4d7c0f;
+
+// LAYOUT
+main{
+    article{
+        section{
+            // Flex
+            display: flex;
+            flex-direction: column;
+            align-items: space-evenly;
+            gap: 15px;
+            // Box model
+            padding: 15px;
+            border-radius: 15px;
+            // Size
+            height: fit-content;
+            img{ height: 40vh; }
+            div{
+                // BG
+                background: #d6d6d6;
+                // Box model
+                padding: 20px;
+                border-radius: 15px;
+                // Flex
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 20px;
+            }
+        }
+    }
+}
+footer{
+    .circle-btn{
+        // Background
+        background: #737373;
+        // Flex
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        // Size
+        width: 2rem;
+        aspect-ratio: 1/1;
+        // Other
+        border-radius: 100%;
+        cursor: pointer;
+    }
+}
+
+// GLOBAL CLASSES
+.main-part{ padding: 80px 160px; display: flex; }
+.title{
+    font-weight: 700;
+    font-size: 2.5rem;
+    color: #404040;
+}
+.btn{
+    width: fit-content;
+    // Box model
+    padding: 12px 28px;
+    border-radius: 6px;
+    // Font
+    font-weight: 600;
+    font-size: 20px;
+    // Colors
+    background: $primary-color;
+    color: white;
+    // Other
+    cursor: pointer;
+    &:hover{ background: $dark-primary-color; }
+}
+.col-gap{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+// Hover classes
+.green-hover{ &:hover{color: $primary-color} cursor: pointer; }
+.bg-green-hover{ &:hover{background: $primary-color} }
