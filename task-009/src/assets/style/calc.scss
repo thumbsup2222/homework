@@ -1,0 +1,30 @@
+*{ font-family: 'Montserrat', sans-serif; }
+body{
+    height: 100vh;
+    overflow: hidden;
+    background: url(../img/bg.jpg);
+    background-size: cover;
+}
+form{
+    // Remove arrows
+        input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
+            -webkit-appearance: none;
+            margin: 0;
+        }
+        input[type=number] {
+            -moz-appearance: textfield !important;
+            appearance: auto;
+        }
+        
+    label{ font-weight: 700; }
+    input[type=number], select{
+        outline: none;
+        border: none;
+        border-radius: 8px;
+        background: #eaeaea;
+        color: black;
+        width: 70px;
+        padding: 5px 15px;
+    }
+    select{ width: 120px; }
+}

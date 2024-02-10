@@ -1,0 +1,23 @@
+* {
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  height: 100vh;
+  background: url(../img/bg.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+nav {
+  height: 16vh;
+}
+
+main {
+  height: 84vh;
+}
+
+.gradient-effect {
+  height: 100%;
+  background: linear-gradient(transparent, rgba(20, 3, 30, 0.8));
+}/*# sourceMappingURL=style.css.map */

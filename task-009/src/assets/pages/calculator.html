@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.bunny.net">
+    <link href="https://fonts.bunny.net/css?family=montserrat:500,600,700" rel="stylesheet" />
+    <!-- Style -->
+    <link rel="stylesheet" href="../style/calc.css">
+    <link rel="stylesheet" href="../style/calc.tailwind.css">
+    <!-- Title -->
+    <title>The Moodle System</title>
+</head>
+<body class="flex justify-center items-center">
+    <script src="../script/calculate.js" defer></script>
+    <main class="bg-neutral-900 bg-opacity-50 backdrop-blur-sm text-white p-12 w-4/5 rounded-xl">
+        <section class="grid grid-rows-1 grid-cols-2">
+            <section class="flex justify-center items-center">
+                <form id="form" class="grid grid-rows-4 grid-cols-2 gap-x-6 gap-y-2 w-fit">
+                    <label for="grade1">1-st Grade:</label>
+                    <input type="number" id="grade1" name="grade1" min="0" max="100" required placeholder="000">
+                    <label for="grade2">2-nd Grade:</label>
+                    <input type="number" name="grade2" id="grade2" min="0" max="100" placeholder="000">
+                    <label for="grade3">3-rd Grade:</label>
+                    <input type="number" name="grade3" id="grade3" min="0" max="100" placeholder="000">
+                    <label for="grade4">4-th Grade:</label>
+                    <input type="number" name="grade4" id="grade4" min="0" max="100" placeholder="000">
+                    <label for="amount">The amount of grades:</label>
+                    <select name="amount" id="amount" required>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                        <option value="4">Four</option>
+                    </select>
+                    <input type="submit" value="Calculate" class="w-fit px-7 py-2 bg-orange-600 rounded-full font-bold text-xl text-white hover:bg-orange-400">
+                    <p id="result"></p>
+                </form>
+            </section>
+            <section class="flex justify-center items-center">
+                <object class="rounded-md" data="../pages/ad.html"></object>
+            </section>
+        </section>
+        <div class="p-16">
+            <div class="w-full h-4 rounded-full bg-slate-400 flex justify-between items-center">
+                <div class="bg-blue-600 rounded-full w-10 aspect-square inline-flex justify-center items-center"><p>1</p></div>
+                <div class="bg-slate-600 rounded-full w-10 aspect-square inline-flex justify-center items-center"><p>2</p></div>
+                <div class="bg-slate-600 rounded-full w-10 aspect-square inline-flex justify-center items-center"><p>3</p></div>
+                <div class="bg-slate-600 rounded-full w-10 aspect-square inline-flex justify-center items-center"><p>4</p></div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
