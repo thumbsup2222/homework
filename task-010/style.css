@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.hero{
+    background-color:#121212;
+    color: #FFFFFF;
+    padding: 120px,104px;
+}
+.div1{
+    border: 1px solid;
+    color: #FFFFFF;
+    border-radius: 15px;
+    padding: 10px;
+    margin-left: 15px;
+    text-decoration: underline; color: #FFFFFF;
+    width: fit-content;
+}
+.div2{
+    border: 1px solid;
+    color: #FFFFFF;
+    border-radius: 15px;
+    padding: 10px;
+    margin-left: 15px;
+    text-decoration: underline; color: #FFFFFF;
+    width: fit-content;
+}
+.div{
+    display: flex;
+    gap: 15px;
+}
+.container{
+    display: flex;
+    gap: 20px;
+}

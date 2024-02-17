@@ -1,0 +1,8 @@
+# Node.JS
+node_modules
+package.json
+package-lock.json
+
+# Tailwind
+tailwind.config.js
+src/assets/style/tailwind.root.css
